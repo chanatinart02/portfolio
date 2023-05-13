@@ -1,6 +1,7 @@
 import "./Header.css";
 import { FaHome, FaUser } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/ck.png";
 
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
@@ -14,8 +15,8 @@ function Header() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <a className="navbar-brand w-25" href="#">
-              <img className="w-75" src="icons/logo.png" alt="" />
+            <a className="navbar-brand w-25" href="/">
+              <img style={{ height: "64px" }} src={logo} alt="" />
             </a>
             <button
               id="expand"
