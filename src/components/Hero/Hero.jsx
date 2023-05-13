@@ -2,6 +2,11 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Hero.css";
 
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Button from "react-bootstrap/Button";
+import Typewriter from "typewriter-effect";
+
 function Hero() {
   const particlesInit = async (main) => {
     console.log(main);
@@ -86,36 +91,49 @@ function Hero() {
           detectRetina: true,
         }}
       />
-
-      {/* <a
-        id="js-download"
-        className="download"
-        href={ExampleDoc}
-        target="_blank"
-      ></a> */}
-
-      <div className="header">
-        <h1>
-          <span className="site-title">MUHAMMAD ZAKARIA</span>
-          <div className="site-description">
-            <p id="typed" className="typed">
-              Dotnet Developer
-            </p>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div style={{ height: "100vh", marginTop: "-56px" }}>
+          <div className="home-content-container h-100 d-flex flex-column align-items-center justify-content-center">
+            <h1>
+              Hello,{" "}
+              <span className="wave" role="img" aria-labelledby="wave">
+                👋🏻
+              </span>
+            </h1>
+            <h1>I Am Masum, a</h1>
+            <h1>
+              <span className="brand-text">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Web Developer",
+                      "Web Designer",
+                      "React Developer",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 25,
+                    delay: 50,
+                  }}
+                />
+              </span>
+            </h1>
+            <div className="social-links mt-">
+              <Button href="https://github.com/chanatinart02">
+                Github
+                <span>
+                  <FaGithub />
+                </span>
+              </Button>
+            </div>
           </div>
-        </h1>
-
-        <div className="header-links">
-          <a className="link" href="#about" data-scroll>
-            About Me
-          </a>
-          <a className="link" href="#skills" data-scroll>
-            Skills
-          </a>
         </div>
-      </div>
-      <a className="down" href="#about" data-scroll>
-        <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
-      </a>
+      </motion.div>
     </div>
   );
 }
