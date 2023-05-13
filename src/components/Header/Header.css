@@ -3,7 +3,16 @@
 }
 
 header {
-  background-color: black;
+  background: #9d50bb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    -20deg,
+    #ff2846 0%,
+    #6944ff 100%
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+
   font-size: 1.25rem;
   font-weight: 500;
+  border-bottom: 1px solid black;
+  border-bottom-color: transparent;
 }
