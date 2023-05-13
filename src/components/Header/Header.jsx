@@ -1,12 +1,8 @@
 import "./Header.css";
-
+import { FaHome, FaUser } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 function Header() {
   const toggleShow = () => {
@@ -45,7 +41,7 @@ function Header() {
                     className="nav-link text-white"
                     activeClassName="active"
                   >
-                    <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                    <FaHome style={{ marginBottom: "2px" }} /> Home
                   </NavLink>
                 </li>
                 <li className="nav-item ms-1">
@@ -54,7 +50,7 @@ function Header() {
                     className="nav-link text-white"
                     activeClassName="active"
                   >
-                    <AiOutlineUser style={{ marginBottom: "2px" }} /> About Me
+                    <FaUser style={{ marginBottom: "2px" }} /> About Me
                   </NavLink>
                 </li>
 
@@ -65,7 +61,7 @@ function Header() {
                     activeClassName="active"
                   >
                     <AiOutlineFundProjectionScreen
-                      style={{ marginBottom: "2px" }}
+                      style={{ marginBottom: "2px", marginRight: "2px" }}
                     />
                     Project
                   </NavLink>
