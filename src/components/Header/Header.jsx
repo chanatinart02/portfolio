@@ -47,7 +47,7 @@ function Header() {
                 </li>
                 <li className="nav-item ms-1">
                   <NavLink
-                    to="/about"
+                    to="/aboutMe"
                     className="nav-link text-white"
                     activeClassName="active"
                   >

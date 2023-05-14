@@ -3,5 +3,6 @@ body {
   font-family: "Roboto", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+  background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  height: 100vh;
 }
