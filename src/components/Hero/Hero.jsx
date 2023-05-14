@@ -99,7 +99,7 @@ function Hero() {
       >
         <div style={{ height: "100vh", marginTop: "-56px" }}>
           <div className="home-content-container h-100 d-flex flex-column align-items-center justify-content-center">
-            <h1>
+            <h1 className="text-center">
               Hello,{" "}
               <span className="wave" role="img" aria-labelledby="wave">
                 👋🏻
@@ -107,7 +107,7 @@ function Hero() {
             </h1>
             <h1 className="text-center">I&rsquo;m Chanatinart Kumpungton, a</h1>
             <h1>
-              <span className="brand-text">
+              <span className="text-center">
                 <Typewriter
                   options={{
                     strings: [
