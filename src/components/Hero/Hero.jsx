@@ -105,14 +105,14 @@ function Hero() {
                 👋🏻
               </span>
             </h1>
-            <h1>I Am Masum, a</h1>
+            <h1 className="text-center">I'm Chanatinart Kumpungton, a</h1>
             <h1>
               <span className="brand-text">
                 <Typewriter
                   options={{
                     strings: [
                       "Web Developer",
-                      "Web Designer",
+                      "MERN Stack Dev",
                       "React Developer",
                     ],
                     autoStart: true,
@@ -124,13 +124,38 @@ function Hero() {
               </span>
             </h1>
             <div className="social-links mt-">
-              <Button href="https://github.com/chanatinart02">
+              <Button
+                variant="dark"
+                size="lg"
+                href="https://github.com/chanatinart02"
+              >
                 Github
-                <span>
+                <span className="m-1">
                   <FaGithub />
                 </span>
               </Button>
+              <Button
+                className="m-3"
+                size="lg"
+                href="https://www.linkedin.com/in/chanatinart/"
+              >
+                Linkedin
+                <span className="m-1">
+                  <FaLinkedin />
+                </span>
+              </Button>
             </div>
+            <Button
+              variant="light"
+              className="m-2"
+              size="lg"
+              href="https://www.linkedin.com/in/chanatinart/"
+            >
+              Download Resume
+              <span className="m-1">
+                <FaDownload />
+              </span>
+            </Button>
           </div>
         </div>
       </motion.div>
