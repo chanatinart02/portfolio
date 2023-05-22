@@ -149,7 +149,7 @@ function Hero() {
               variant="light"
               className="m-2"
               size="lg"
-              href="https://drive.google.com/file/d/11wpJK5LE0sEQqvhzYpICQ0rauaxkc78L/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-_z8hdLhAD7caKVym-LonV2RSQbkGC99/view?usp=sharing"
             >
               Download Resume
               <span className="m-1">
