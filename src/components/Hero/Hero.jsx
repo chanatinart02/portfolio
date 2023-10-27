@@ -6,6 +6,7 @@ import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Button from "react-bootstrap/Button";
 import Typewriter from "typewriter-effect";
+import { resumeLink } from "../data";
 
 function Hero() {
   const particlesInit = async (main) => {
@@ -145,12 +146,7 @@ function Hero() {
                 </span>
               </Button>
             </div>
-            <Button
-              variant="light"
-              className="m-2"
-              size="lg"
-              href="https://drive.google.com/file/d/1-_z8hdLhAD7caKVym-LonV2RSQbkGC99/view?usp=sharing"
-            >
+            <Button variant="light" className="m-2" size="lg" href={resumeLink}>
               Download Resume
               <span className="m-1">
                 <FaDownload />

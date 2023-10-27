@@ -2,7 +2,7 @@ import Layout from "../Layout";
 
 import Masonry from "react-masonry-css";
 import "./Projects.css";
-import { colmar, findHat } from "../../assets/index";
+import { justFit, bootstrapWeb, tailwind } from "../../assets/index";
 
 import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
@@ -10,20 +10,29 @@ import ProjectItems from "./ProjectItems";
 function Project() {
   const projects = [
     {
-      img: colmar,
-      title: "Colmar webpage",
-      description: "Landing page Using HTML, CSS, and GitHub pages.",
-      technology: ["HTML", "CSS"],
-      livesite: "https://chanatinart02.github.io/Colmar-Webpage/",
-      github: "https://github.com/chanatinart02/Colmar-Webpage",
+      img: justFit,
+      title: "JustFit-App",
+      description: "Activity tracking using MERN Stack.",
+      technology: ["React", "Bootstrap", "Express", "MongoDB"],
+      livesite: "https://just-fit-app.vercel.app/",
+      github: "https://github.com/chanatinart02/JustFit-App",
     },
     {
-      img: findHat,
-      title: "Find my hat",
-      description: "Command line game.  ",
-      technology: ["JAVASCRIPT"],
-      livesite: "https://replit.com/@chanatinart02/JSD4-Find-Your-Hat",
-      github: "",
+      img: bootstrapWeb,
+      title: "Bootstrap5-responsive-web",
+      description: "Responsive page with Bootstrap5.",
+      technology: ["HTML5", "Bootstrap5"],
+      livesite: "https://chanatinart02.github.io/Bootstrap5-responsive-web/",
+      github: "https://github.com/chanatinart02/Bootstrap5-responsive-web",
+    },
+    {
+      img: tailwind,
+      title: " Responsive Website with Tailwind",
+      description:
+        "Fully Responsive Website with Modern UI/UX in React JS with Tailwind",
+      technology: ["React", "Tailwind"],
+      livesite: "https://chanatinart02.github.io/Modern-UI-UX-website/",
+      github: "https://github.com/chanatinart02/Modern-UI-UX-website",
     },
   ];
   const breakpointColumnsObj = {

@@ -6,6 +6,7 @@ import avatar from "../../assets/Avatar-Maker.png";
 import Skills from "./Skills";
 import Tools from "./Tools";
 import Cer from "./Cer";
+import { resumeLink } from "../data";
 
 function About() {
   return (
@@ -19,28 +20,15 @@ function About() {
         <div className="container pb-5">
           <div className="row">
             <h1 className="text-white text-center my-4">About Me</h1>
-            <div className="col-md-8">
-              <p style={{ fontSize: "1.2rem" }} className="text-white">
-                Before discovering my passion for coding, I spent three
-                fulfilling years working in Human Resources. This experience
-                allowed me to develop strong communication skills, which I use
-                to effectively collaborate with colleagues from diverse
-                backgrounds. <br />
-                <br />
-                Since then, I have immersed myself in the world of programming,
-                beginning my journey at freeCodeCamp and continuing to expand my
-                knowledge and expertise through Generation Thailand&rsquo;s
-                Junior Software Developer (Fullstack) Bootcamp. During this
-                time, I have gained valuable technical skills and learned how to
-                collaborate effectively with others using agile methodologies.
-                <br />
-                <br />
-                Today, I remain dedicated to honing my technical and soft
-                skills, driven by my unwavering passion for development. I am
-                always seeking new challenges and opportunities to innovate and
-                create value for your organization. With my creativity,
-                determination, and strong work ethic, I am confident that I can
-                make a meaningful contribution to your team.
+            <div className="col-md-8 d-flex align-items-center">
+              <p style={{ fontSize: "1.5rem" }} className="text-white">
+                After three fulfilling years in Human Resources, I discovered my
+                passion for coding. This journey began at The odin Project and
+                continued through Generation Thailand’s Junior Software
+                Developer Bootcamp. I've honed technical skills and learned
+                agile collaboration. Now, I'm eager to bring my creativity,
+                determination, and strong work ethic to your team, seeking new
+                challenges and opportunities to innovate.
               </p>
             </div>
             <div className="col-md-4 d-flex justify-content-center flex-column">
@@ -49,7 +37,7 @@ function About() {
                 variant="light"
                 className="m-2"
                 size="lg"
-                href="https://drive.google.com/file/d/1-_z8hdLhAD7caKVym-LonV2RSQbkGC99/view?usp=sharing"
+                href={resumeLink}
               >
                 Download Resume
                 <span className="m-1">
