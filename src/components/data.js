@@ -1,2 +1,2 @@
 export const resumeLink =
-  "https://drive.google.com/file/d/1P9cl5RoUPsRhUWbcZpWq1kzCnpqGRgrb/view?usp=sharing";
+  "https://drive.google.com/drive/folders/1cvK5xQrrM7w9uEB3hT-51a4BLUXGGVPZ?usp=drive_link";

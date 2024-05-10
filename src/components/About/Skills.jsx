@@ -10,7 +10,15 @@ import {
   DiHtml5,
   DiGit,
 } from "react-icons/di";
-import { SiBootstrap, SiTailwindcss, SiSass, SiExpress } from "react-icons/si";
+import {
+  SiBootstrap,
+  SiTailwindcss,
+  SiSass,
+  SiExpress,
+  SiNextdotjs,
+  SiTypescript,
+} from "react-icons/si";
+import { BsFiletypeSql } from "react-icons/bs";
 
 function Skills() {
   return (
@@ -28,8 +36,16 @@ function Skills() {
         <p style={{ fontSize: "1.2rem" }}>CSS3</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+        <p style={{ fontSize: "1.2rem" }}>TypeScript</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
         <p style={{ fontSize: "1.2rem" }}>React.js</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+        <p style={{ fontSize: "1.2rem" }}>Next.js</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -42,6 +58,10 @@ function Skills() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
         <p style={{ fontSize: "1.2rem" }}>MongoDB</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsFiletypeSql />
+        <p style={{ fontSize: "1.2rem" }}>SQL</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
